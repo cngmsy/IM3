@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.huanxin.activity.ShaoyeActivity">
+    tools:context="com.example.administrator.huanxin.activity.ShaoyeActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fram_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#efefef"
+        />
+    <LinearLayout
+        android:id="@+id/hom_layourt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000"
+        >
+        <RadioGroup
+            android:id="@+id/homo_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="3">
 
-</RelativeLayout>
+            <RadioButton
+                android:id="@+id/homo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/em_tab_chat_bg"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@color/em_main_botton_text_color" />
+
+            <RadioButton
+                android:id="@+id/ding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/em_tab_contact_list_bg"
+                android:gravity="center"
+                android:text="订单"
+                android:textColor="@color/em_main_botton_text_color" />
+            <RadioButton
+                android:id="@+id/my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5px"
+                android:layout_marginTop="5px"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="false"
+                android:drawableTop="@drawable/em_tab_setting_bg"
+                android:gravity="center"
+                android:text="个人"
+                android:textColor="@color/em_main_botton_text_color" />
+        </RadioGroup>
+    </LinearLayout>
+</LinearLayout>

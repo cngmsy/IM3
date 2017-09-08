@@ -2,6 +2,7 @@ package com.example.administrator.huanxin.base;
 
 
 import android.app.Application;
+import android.util.Config;
 
 import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
