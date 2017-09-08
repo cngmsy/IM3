@@ -1,0 +1,15 @@
+Index: app/src/main/java/com/example/administrator/huanxin/activity/LoginActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/administrator/huanxin/activity/LoginActivity.java	(date 1504830231000)
++++ app/src/main/java/com/example/administrator/huanxin/activity/LoginActivity.java	(revision )
+@@ -20,6 +20,7 @@
+ 
+     public void register(View view) {
+         startActivityForResult(new Intent(this, RegisterActivity.class), 0);
++
+     }
+ 
+     @Override
